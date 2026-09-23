@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Projeto idealizado para a disciplina de Programação Web 1 que tem como objetivo ajudar pessoas interessadas em aprender inglês por disponibilizar de forma acessível um guia de estudos dividido por cada nível do idioma definido pelo CEFR (Common European Framework of Reference for Languages).
+Projeto idealizado para a disciplina de Programação Web 1 que tem como objetivo ajudar pessoas interessadas em aprender inglês por disponibilizar de forma acessível um guia de estudos dividido por cada nível do idioma definido pelo CEFR (Common European Framework of Reference for Languages). 
 
 ## Tecnologias
 
@@ -30,13 +30,15 @@ Antes de executar o projeto, é necessário ter instalado:
 ### Em seguida
 
 - Clone o repositório
-git clone https://github.com/efrancyne/speak-english
 
-- Acesse a pasta do projeto
-cd app
+#### git clone https://github.com/efrancyne/speak-english
 
-- Instale as dependências
-yarn install
+- Acesse a pasta do projeto:
+`cd app`
 
-- Inicie o projeto
-yarn start
+- Instale as dependências:
+`yarn install`
+
+- Inicie o projeto:
+`yarn start`
+
