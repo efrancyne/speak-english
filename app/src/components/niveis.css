@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.square{
+    width: 180px;
+    height: 180px;
+
+    padding: 20px;
+
+    border-radius: 30px;
+    border: none;
+
+    background: linear-gradient(135deg, #FE99BE, #D6608C);
+
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.levels {
+    position: absolute;
+    left: 0;
+    margin-top: 33rem;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    font-family: 'Jost', sans-serif;
+}
+
+.square:hover{
+    background: linear-gradient(135deg, #D6608C, #FE99BE);
+   
+}
+
+.level-description{
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .square{
+        display: wrap;
+        flex-wrap: wrap;
+    }
+    .levels {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .levels {
+        grid-template-columns: repeat(2, auto);
+    }
+    
+}

@@ -1,0 +1,91 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: sans-serif; 
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body,
+#root {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.hero {
+    position: relative;
+    min-height: 30rem;
+}
+
+.background {
+    background: linear-gradient(135deg, #16245D, #1D3493);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40rem;
+    z-index: -1;
+    border-radius: 0 0 60px 60px;
+}
+.text-background{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: clamp(3.5rem, 8vw, 9rem);
+    line-height: 1;
+    margin: 0.5em 0em 0em 1em;
+}
+.second-text{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.2;
+    margin: 0.2em 0em 0em 7em;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        min-height: 45rem; 
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        min-height: 850px;
+    }
+
+    .background {
+        height: 550px;
+    }
+
+    .text-background {
+        font-size: clamp(4.5rem, 11vw, 4.5rem);
+        margin: 0.5em 0em 0.5em 0.5em;
+    }
+
+    .second-text {
+        font-size: 1.5em;
+        margin: 1em 1em 0.5em 2em;
+    }
+
+}
+

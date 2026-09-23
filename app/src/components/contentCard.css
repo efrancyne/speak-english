@@ -1,0 +1,94 @@
+.content-card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 15rem;
+    color: #16245D;
+}
+.content-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-card-lessons{
+    width: 20rem;
+    min-height: 20rem;
+    height: auto;
+
+    background: linear-gradient(135deg, #EBF277, #FAFFA9);
+    border-radius: 20px;
+    margin-top: 0.7rem;
+}
+
+.content-card-image{
+    width: 9rem;
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+   
+}
+.content-card-text{
+    font-family: 'Jost', sans-serif;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #16245D;
+    text-decoration: none;
+    
+}
+
+.content-card-text:hover{
+    color: #1D3493;
+   
+}
+.content-card-description{
+    font-family: 'Jost', sans-serif;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: #16245D;
+    margin: 0rem 1rem 0 0rem;
+}
+
+@media (max-width: 1100px) {
+    .content-card {
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+    
+    .content-card-title{
+        margin-top: 25rem;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .content-card-title {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .content-card-title {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+        margin-top: 15rem;
+    }
+
+    .content-card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .content-card-lessons {
+        width: 100%;
+        max-width: 20rem;
+        margin-top: 0;
+    }
+}
+

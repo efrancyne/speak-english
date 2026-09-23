@@ -1,0 +1,29 @@
+.footer-container {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7rem;
+
+    padding: 2rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+
+    background-color: #FE99BE;
+    border-radius: 25px 25px 0 0;
+    font-family: 'Jost', sans-serif;
+    color: #16245D;
+}
+
+@media (max-width: 700px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        gap: 1rem;
+        margin-top: 4rem;
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+}

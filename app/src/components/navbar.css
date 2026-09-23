@@ -1,0 +1,38 @@
+.div-navbar{
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(135deg, #16245D, #1D3493);
+  border: none;
+}
+
+.navbar-container {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background-color: #efff75;
+    border-radius: 0 0 25px 25px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 3rem;
+    color: #16245D;
+}
+.nav-list a{
+   font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    color: inherit; 
+
+}
+.nav-list a:hover {
+    font-weight: bold;
+}
