@@ -30,7 +30,7 @@ Antes de executar o projeto, é necessário ter instalado:
 ### Em seguida
 
 - Clone o repositório
-git clone [URL_DO_REPOSITORIO](https://github.com/efrancyne/speak-english)
+git clone https://github.com/efrancyne/speak-english
 
 - Acesse a pasta do projeto
 cd app
