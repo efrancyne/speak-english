@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --navy: #16245d;
+  --navy-2: #1d3493;
+  --yellow: #efff75;
+  --yellow-2: #ebf277;
+  --pink: #fe99be;
+  --pink-2: #d6608c;
+  --soft: #f4f6ff;
+  --line: #e4e8fb;
+  --green: #2f9e68;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  line-height: 1.5;
+  color: var(--navy);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: #fff;
+}
+
+.btn-outline {
+  border-color: var(--navy);
+  background: transparent;
+  color: var(--navy);
+}
+
+.btn-outline:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+.btn-accent {
+  background: var(--pink-2);
+  color: #fff;
+}
+
+.hero {
+  margin-top: -25px;
+  padding: 120px 24px 112px;
+  border-radius: 0 0 60px 60px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-2));
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.text-background {
+  color: #fff;
+  font-size: clamp(56px, 10vw, 152px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.highlight {
+  background: linear-gradient(90deg, var(--yellow), var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+}
+
+.second-text {
+  max-width: 736px;
+  margin-top: 26px;
+  color: #dfe6ff;
+  font-size: clamp(19px, 2.4vw, 28px);
+  font-weight: 300;
+}
+
+.hero-cta {
+  margin-top: 42px;
+}
+
+.hero .btn {
+  padding: 14px 30px;
+  font-size: 19px;
+}
+
+.hero-login {
+  margin-top: 19px;
+  color: #dfe6ff;
+  font-size: 18px;
+}
+
+.hero-login a {
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+.how-it-works {
+  max-width: 1100px;
+  margin: 64px auto 0;
+  padding: 0 24px;
+}
+
+.section-title {
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.step-card {
+  position: relative;
+  padding: 32px 24px 24px;
+  border-radius: 24px;
+  background: var(--soft);
+  text-align: center;
+}
+
+.step-card h3 {
+  margin: 10px 0 5px;
+  font-size: 19px;
+}
+
+.step-card p {
+  color: #3d4a7a;
+}
+
+.step-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: var(--pink-2);
+  color: #fff;
+  font-size: 22px;
+}
+
+.step-number {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  color: var(--pink-2);
+  font-size: 26px;
+  font-weight: 700;
+}
