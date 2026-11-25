@@ -87,24 +87,6 @@ Se a API estiver em outro endereço, copie `frontend/.env.example` para `fronten
 | PUT | /api/progress | Marca ou troca o status: `preciso_estudar` ou `dominado` (`userId`, `contentId`, `status`) |
 | DELETE | /api/progress/:userId/:contentId | Remove a marcação |
 
-## Requisitos da AB1 e onde estão no código
-
-Caminhos relativos a `frontend/src/` (exceto o banco, que está em `backend/`).
-
-| Requisito | Onde está |
-|---|---|
-| Página HTML inicial | `pages/Home.js`, na rota `/` (`public/index.html` só tem o `<div id="root">`) |
-| Dividir a página em partes | `Home.js` é dividida em `StepCard` e `ContentCard`; as demais usam `Layout`, `Navbar`, `Footer`, `LevelCard`, `Tabs`, `TopicList`, `TopicItem` (todos em `components/`) |
-| Comandos de locomoção | `Link` e `NavLink` em `Navbar.js`, `LevelCard.js` e `Home.js`; `useNavigate` em `Navbar.js` e `pages/Login.js`; `useParams` em `pages/LevelPage.js`; `Navigate` em `App.js` (níveis só com conta) |
-| Estilização de texto | `App.css` e `pages/pages.css` (`.page-title`, `.page-lead`, `.topic-title`, `.topic-meaning`) |
-| Estilização de imagens | `.content-card-image` em `components/contentCard.css` (imagens de `assets/` em `ContentCard.js`) e `.logo` em `components/navbar.css` |
-| Rotas para diferentes páginas | `App.js` (`Routes` e `Route`: `/`, `/niveis`, `/niveis/:code`, `/meus-estudos`, `/login`, `/cadastro`) |
-| Props | `Layout`→`Navbar` (`user`, `onLogout`), `LevelCard` (`code`, `description`), `StepCard`, `ContentCard`, `Tabs`, `TopicList`→`TopicItem` (`topic`, `status`, `onChange`), páginas (`user`, `onLogin`) |
-| Biblioteca de ícones | `react-icons/fa` em `Navbar.js`, `Home.js`, `LevelCard.js` (um ícone por nível), `TopicItem.js`, `LevelPage.js`, `Login.js`, `Register.js` |
-| Eventos `onChange` e `onClick` | `onChange`: inputs em `pages/Login.js` e `pages/Register.js`. `onClick`: `Tabs.js`, `TopicItem.js` (abrir exemplo e marcar status), `Navbar.js` (menu e Sair) |
-| `useState` e renderização condicional | `useState` em `App.js` (aluno logado), `LevelPage.js`, `MyStudy.js`, `TopicItem.js`, `Navbar.js`, `Login.js`. Condicional: menu logado/deslogado em `Navbar.js`, `user ? ... : <Navigate>` em `App.js` (níveis só com conta), botão da `Home.js`, `MyStudy.js` |
-| Conexão com banco de dados | `backend/src/config/db.js` (pool MySQL), `backend/database/schema.sql` (tabelas), `backend/src/controllers/` (consultas SQL), `frontend/src/services/api.js` (chama a API) |
-
 ## Fontes do conteúdo
 
 Os assuntos de cada nível foram selecionados e adaptados a partir dos descritores do CEFR (Common European Framework of Reference for Languages) e das listas de gramática e vocabulário do English Grammar Profile, da Cambridge. Os títulos, as explicações e os exemplos foram escritos para este projeto.
